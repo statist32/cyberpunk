@@ -1,15 +1,15 @@
 :root {
   --blue: #22edfc;
-  --yellow: #fcee0a;
+  --yellow: #fbeb04;
   --black: #050a0e;
 }
 body {
   padding: 0;
   margin: 0;
   color: var(--yellow);
-  background: url(http://cyberpunk-2077.net/wp-content/uploads/2018/11/cropped-cyberpunk_2077_header.jpg);
+  background: url(https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-high-speed-high-stakes-en.jpg);
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   overflow: hidden;
 }
 html {
@@ -19,8 +19,9 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  text-shadow: 2px 4px #22edfc;
 }
 
 h1 {
@@ -39,10 +40,17 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  text-shadow: 1px 1px #22edfc;
 }
 
 footer > a {
-  /*background: var(--black);*/
   color: var(--yellow);
   text-decoration: none;
+}
+
+#release {
+  background: url("./cyberpunk_2077_logo_by_crepet9000_dcmxfyu-pre.png");
+  height: 40%;
+  width: 40%;
+  background-size: contain;
 }
