@@ -3,13 +3,14 @@
   --yellow: #fbeb04;
   --black: #050a0e;
 }
-body {
+* {
   padding: 0;
   margin: 0;
+}
+body {
   color: var(--yellow);
   background: url(https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-high-speed-high-stakes-en.jpg);
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
   overflow: hidden;
 }
 html {
