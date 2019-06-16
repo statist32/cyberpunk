@@ -12,7 +12,7 @@
     <title>Time till Cyberpunk2077</title>
   </head>
   <body>
-    <p id="release"></p>
+    <p id="logo"></p>
     <h1 id="time"></h1>
     <footer>
       <a href="https://en.cdprojektred.com/"
@@ -28,7 +28,7 @@
         let mins = Math.floor((remaining % (60 * 60)) / 60);
         let secs = Math.floor(remaining % 60);
         document.getElementById("time").innerHTML =
-          days + " : " + hours + " : " + mins + " : " + secs;
+          days + " d : " + hours + " h : " + mins + " m : " + secs + " s";
       }
       setInterval(function() {
         calcTime();
