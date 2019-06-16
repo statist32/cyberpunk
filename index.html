@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Time till Cyberpunk2077</title>
+  </head>
+  <body>
+    <p id="release">Cyberpunk 2077 releases in:</p>
+    <p id="time"></p>
+    <script>
+      function calcTime() {
+        const release = new Date(2020, 3, 16);
+        let remaining = (release - Date.now()) / 1000; // time in seconds
+        let days = Math.floor(remaining / 60 / 60 / 24);
+        let hours = Math.floor((remaining % (60 * 60 * 24)) / 60 / 60);
+        let mins = Math.floor((remaining % (60 * 60)) / 60);
+        let secs = Math.floor(remaining % 60);
+        document.getElementById("time").innerHTML =
+          days + " : " + hours + " : " + mins + " : " + secs;
+      }
+      setInterval(function() {
+        calcTime();
+      }, 1000);
+    </script>
+  </body>
+</html>
