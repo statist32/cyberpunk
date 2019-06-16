@@ -65,5 +65,6 @@ footer > a {
 @media (max-width: 700px) {
   h1 {
     font-size: 1.5rem;
+    text-shadow: 1px 1px #22edfc;
   }
 }
