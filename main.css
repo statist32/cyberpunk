@@ -91,4 +91,20 @@ footer > a {
     font-size: 1.5rem;
     text-shadow: 1px 1px #22edfc;
   }
+  #d::after {
+    content: "d";
+    font-size: 1rem;
+  }
+  #h::after {
+    content: "h";
+    font-size: 1rem;
+  }
+  #m::after {
+    content: "m";
+    font-size: 1rem;
+  }
+  #s::after {
+    content: "s";
+    font-size: 1rem;
+  }
 }
