@@ -73,18 +73,22 @@ footer > a {
 #d::after {
   content: "days";
   font-size: 2rem;
+  text-shadow: 1px 1px #22edfc;
 }
 #h::after {
   content: "hours";
   font-size: 2rem;
+  text-shadow: 1px 1px #22edfc;
 }
 #m::after {
   content: "minutes";
   font-size: 2rem;
+  text-shadow: 1px 1px #22edfc;
 }
 #s::after {
   content: "seconds";
   font-size: 2rem;
+  text-shadow: 1px 1px #22edfc;
 }
 @media (max-width: 700px) {
   h1 {
