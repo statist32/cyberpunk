@@ -13,7 +13,12 @@
   </head>
   <body>
     <p id="logo"></p>
-    <h1 id="time"></h1>
+    <h1 id="time">
+      <div id="d"></div>
+      <div id="h"></div>
+      <div id="m"></div>
+      <div id="s"></div>
+    </h1>
     <footer>
       <a href="https://en.cdprojektred.com/"
         >Cyberpunk 2077 is published by CD Project Red</a
@@ -27,8 +32,10 @@
         let hours = Math.floor((remaining % (60 * 60 * 24)) / 60 / 60);
         let mins = Math.floor((remaining % (60 * 60)) / 60);
         let secs = Math.floor(remaining % 60);
-        document.getElementById("time").innerHTML =
-          days + " d : " + hours + " h : " + mins + " m : " + secs + " s";
+        document.getElementById("d").innerHTML = days;
+        document.getElementById("h").innerHTML = ("0" + hours).slice(-2);
+        document.getElementById("m").innerHTML = ("0" + mins).slice(-2);
+        document.getElementById("s").innerHTML = ("0" + secs).slice(-2);
       }
       setInterval(function() {
         calcTime();
